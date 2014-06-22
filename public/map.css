@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+}
+
+#map {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+
+    background-color: #fefefe;
+}
+
+#logo {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    z-index: 10;
+
+    padding: 5px 10px 5px 60px;
+
+    font-family: sans;
+    font-size: 20px;
+
+    color: #efefef;
+    background-color: #333;
+}
+.leaflet-control-layers-expanded {
+    margin-top: 40px;
+    margin-right: 40px;
+
+    padding: 5px 60px 5px 10px;
+    color: #efefef;
+    background: #333;
+    border-radius: 0;
+
+    
+}
+.leaflet-control-layers-overlays label {
+    height: 30px;
+    line-height: 30px;
+}
+.leaflet-control-layers-selector {
+    height: 13px;
+    margin: 0 5px 0 0;
+}
+.leaflet-top .leaflet-control {
+    margin-top: 120px;
+}
+.leaflet-right .leaflet-control {
+    margin-right: 0px;
+}
+.leaflet-left .leaflet-control {
+    margin-left: 58px;
+}
+.leaflet-control-layers-list {
+    margin: 0;
+}
+.leaflet-control-layers,
+.leaflet-control-zoom {
+    box-shadow: none;
+}
+.leaflet-bar a,
+.leaflet-bar a:hover,
+.leaflet-bar a:first-child,
+.leaflet-bar a:last-child {
+    background: #333;
+
+    border-radius: 0;
+    border-width: 0;
+
+    width: 20px;
+    height: 20px;
+
+    line-height: 20px;
+}
+.leaflet-bar a,
+.leaflet-bar a:first-child,
+.leaflet-bar a:last-child {
+    color: #efefef;
+}
+.leaflet-bar a:hover {
+    color: #ddd;
+}
+.leaflet-control-zoom-in {
+    margin-bottom: 5px;
+}
+.leaflet-popup-content-wrapper {
+    border-radius: 0;
+}
+.leaflet-popup-content {
+    margin: 10px 12px 10px 12px;
+}
+.leaflet-popup-close-button {
+    font-size: 10px !important;
+    width: 10px !important;
+    height: 10px !important;
+    line-height: 10px;
+    padding: 0 2px 0 0 !important;
+}
