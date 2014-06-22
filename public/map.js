@@ -16,8 +16,8 @@ function initMap() {
 
     var osmCopyright = "Map data &copy; 2012 OpenStreetMap contributors";
 
-    var center = new L.LatLng(52.51, 13.37628);
-    map.setView(center, min);
+    var center = new L.LatLng(52.5171, 13.3888);
+    map.setView(center, 14);
 
     var base = {
         'Hintergrund': new L.TileLayer('http://tiles3.buergerbautstadt.de/berlin/{z}/{x}/{y}.png', {
