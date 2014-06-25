@@ -41,8 +41,8 @@ function initMap() {
         });
     });
 
-    overlay['Gebaudeschaeden 1944'] = L.tileLayer(baseUrl + 'gebschaden/{z}/{x}/{y}.png',{
-	'attribution': '<a href="http://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=gebschaden@senstadt&type=WMS">Geoportal Berlin / Geboudeschaden 1945</a>',
+    overlay['Gebäudeschäden 1944'] = L.tileLayer(baseUrl + 'gebschaden/{z}/{x}/{y}.png',{
+	'attribution': '<a href="http://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=gebschaden@senstadt&type=WMS">Geoportal Berlin / Gebäudeschäden 1945</a>',
 	'minZoom': min,
 	'maxZoom': max,
 	'tms': true
