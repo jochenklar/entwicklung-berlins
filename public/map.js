@@ -7,7 +7,7 @@ function init() {
 function initMap() {
     var map = new L.Map('map');
 
-    var min = 10;
+    var min = 14;
     var max = 17;
     var reuse = true;
 
@@ -32,13 +32,20 @@ function initMap() {
 
     var overlay = {};
 
-    $.each(['1650','1690','1750','1800'], function(key,year) {
+    $.each(['1650','1690','1750','1800','1850','1880','1910','1940','1986'], function(key,year) {
         overlay['Berlin um ' + year] = L.tileLayer(baseUrl + 'berlin' +  year + '/{z}/{x}/{y}.png', {
             'attribution': '<a href="http://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=berlin' + year + '@senstadt&type=WMS">Geoportal Berlin / Berlin um ' + year + '</a>',
             'minZoom': min,
             'maxZoom': max,
             'tms': true
-        })
+        });
+    });
+
+    overlay['Gebaudeschaeden 1944'] = L.tileLayer(baseUrl + 'gebschaden/{z}/{x}/{y}.png',{
+	'attribution': '<a href="http://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=gebschaden@senstadt&type=WMS">Geoportal Berlin / Geboudeschaden 1945</a>',
+	'minZoom': min,
+	'maxZoom': max,
+	'tms': true
     });
 
     L.control.layers({}, overlay, {collapsed: false}).addTo(map);
