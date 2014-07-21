@@ -11,7 +11,7 @@ function initMap() {
     var max = 17;
     var reuse = true;
 
-    var baseUrl = 'http://services.codefor.de/static/entwicklung-berlins/';
+    var baseUrl = 'http://tiles.codefor.de/static/entwicklung-berlins/';
     var errorTile = baseUrl + 'error.png';
 
     var osmCopyright = "Map data &copy; 2012 OpenStreetMap contributors";
@@ -20,7 +20,7 @@ function initMap() {
     map.setView(center, 14);
 
     var base = {
-        'Hintergrund': new L.TileLayer('http://tiles3.buergerbautstadt.de/berlin/{z}/{x}/{y}.png', {
+        'Hintergrund': new L.TileLayer('http://tiles.codefor.de/static/bbs/berlin/{z}/{x}/{y}.png', {
             minZoom: min,
             maxZoom: max,
             attribution: osmCopyright, 
